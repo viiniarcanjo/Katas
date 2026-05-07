@@ -1,0 +1,14 @@
+C:\Users\vsimo\Documents\Projetos\Katas\SantasAllotment\SantasAllotment\bin\Debug\net10.0\SantasAllotment.exe
+C:\Users\vsimo\Documents\Projetos\Katas\SantasAllotment\SantasAllotment\bin\Debug\net10.0\SantasAllotment.deps.json
+C:\Users\vsimo\Documents\Projetos\Katas\SantasAllotment\SantasAllotment\bin\Debug\net10.0\SantasAllotment.runtimeconfig.json
+C:\Users\vsimo\Documents\Projetos\Katas\SantasAllotment\SantasAllotment\bin\Debug\net10.0\SantasAllotment.dll
+C:\Users\vsimo\Documents\Projetos\Katas\SantasAllotment\SantasAllotment\bin\Debug\net10.0\SantasAllotment.pdb
+C:\Users\vsimo\Documents\Projetos\Katas\SantasAllotment\SantasAllotment\obj\Debug\net10.0\SantasAllotment.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vsimo\Documents\Projetos\Katas\SantasAllotment\SantasAllotment\obj\Debug\net10.0\SantasAllotment.AssemblyInfoInputs.cache
+C:\Users\vsimo\Documents\Projetos\Katas\SantasAllotment\SantasAllotment\obj\Debug\net10.0\SantasAllotment.AssemblyInfo.cs
+C:\Users\vsimo\Documents\Projetos\Katas\SantasAllotment\SantasAllotment\obj\Debug\net10.0\SantasAllotment.csproj.CoreCompileInputs.cache
+C:\Users\vsimo\Documents\Projetos\Katas\SantasAllotment\SantasAllotment\obj\Debug\net10.0\SantasAllotment.dll
+C:\Users\vsimo\Documents\Projetos\Katas\SantasAllotment\SantasAllotment\obj\Debug\net10.0\refint\SantasAllotment.dll
+C:\Users\vsimo\Documents\Projetos\Katas\SantasAllotment\SantasAllotment\obj\Debug\net10.0\SantasAllotment.pdb
+C:\Users\vsimo\Documents\Projetos\Katas\SantasAllotment\SantasAllotment\obj\Debug\net10.0\SantasAllotment.genruntimeconfig.cache
+C:\Users\vsimo\Documents\Projetos\Katas\SantasAllotment\SantasAllotment\obj\Debug\net10.0\ref\SantasAllotment.dll
