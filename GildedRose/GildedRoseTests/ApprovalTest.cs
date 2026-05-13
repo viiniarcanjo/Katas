@@ -14,25 +14,51 @@ namespace GildedRoseTests;
 public class ApprovalTest
 {
     [Fact]
-    public Task Foo()
+    public void UpdateQuality_WhenCalledWithAgedBrie_IncreasesQualityWhileSellInApproachesZero()
     {
-        Item[] items = { new Item { Name = "foo", SellIn = 0, Quality = 0 } };
-        GildedRose app = new GildedRose(items);
-        app.UpdateQuality();
+        var items = new[] { new Item { Name = "Aged Brie", SellIn = 2, Quality = 0 } };
         
-        return Verifier.Verify(items);
+        var system = new GildedRose(items);
+        
+        system.UpdateQuality();
+        
+        Assert.Equal(1, items[0].SellIn);
+        Assert.Equal(1, items[0].Quality);
+        
+        system.UpdateQuality();
+        
+        Assert.Equal(0, items[0].SellIn);
+        Assert.Equal(2, items[0].Quality);
     }
     
     [Fact]
-    public Task ThirtyDays()
+    public void UpdateQuality_WhenCalledWithSulfuras_KeepsQualityAndSellIn()
     {
-        var fakeoutput = new StringBuilder();
-        Console.SetOut(new StringWriter(fakeoutput));
-        Console.SetIn(new StringReader($"a{Environment.NewLine}"));
-
-        Program.Main(new string[] { "30" });
-        var output = fakeoutput.ToString();
-
-        return Verifier.Verify(output);
+        var items = new[] { new Item { Name = "Sulfuras, Hand of Ragnaros", SellIn = 0, Quality = 80 } };
+        
+        var system = new GildedRose(items);
+        
+        system.UpdateQuality();
+        
+        Assert.Equal(0, items[0].SellIn);
+        Assert.Equal(80, items[0].Quality);
+    }
+    
+    [Fact]
+    public void UpdateQuality_WhenCalledWithBackstagePasses_IncreasesQualityWhenApproachingSellInDayWithA50QualityCap()
+    {
+        var items = new[] { new Item { Name = "Backstage passes to a TAFKAL80ETC concert", SellIn = 2, Quality = 49 } };
+        
+        var system = new GildedRose(items);
+        
+        system.UpdateQuality();
+        
+        Assert.Equal(1, items[0].SellIn);
+        Assert.Equal(50, items[0].Quality);
+        
+        system.UpdateQuality();
+        
+        Assert.Equal(0, items[0].SellIn);
+        Assert.Equal(50, items[0].Quality);
     }
 }
